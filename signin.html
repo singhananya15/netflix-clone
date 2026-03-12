@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netflix Sign-In</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("assets/images/bg.jpg") center/cover no-repeat fixed;
+}
+
+.overlay{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+       linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.5)),
+       radial-gradient(circle at top, rgba(255,0,40,0.7), transparent 70%);
+}
+
+.login-box{
+    background-color: rgba(0,0,0,0.75);
+    padding:60px 50px;
+    width:350px;
+    border-radius:6px;
+    color:white;
+}
+
+.login-box h1{
+    margin-bottom:25px;
+}
+
+.login-box input{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border-radius:4px;
+    border:none;
+    background:#333;
+    color:white;
+    font-size:16px;
+}
+
+.login-box button{
+    width:100%;
+    padding:14px;
+    background:#e50914;
+    border:none;
+    border-radius:4px;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.login-box button:hover{
+    background:#f6121d;
+}
+
+.extra{
+    margin-top:10px;
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+    color:#b3b3b3;
+}
+
+.signup{
+    margin-top:40px;
+    color:#b3b3b3;
+}
+
+.signup span{
+    color:white;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="login-box">
+
+        <h1>Sign In</h1>
+
+        <input type="text" placeholder="Email or phone number">
+        <input type="password" placeholder="Password">
+
+        <button>Sign In</button>
+
+        <div class="extra">
+            <label><input type="checkbox"> Remember me</label>
+            <span>Need help?</span>
+        </div>
+
+        <p class="signup">
+            New to Netflix? <span>Sign up now.</span>
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
